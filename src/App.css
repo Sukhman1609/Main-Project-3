@@ -1,0 +1,998 @@
+/* */
+
+body {
+  overflow-x: hidden;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  font-size: 24px;
+  display: none; 
+}
+
+/* Styles for the navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+   padding: 10px;
+    z-index:  1;
+    
+}
+
+.nav-links li {
+  margin-right: 20px;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16pt;
+}
+
+
+.Linkstyle {
+  /* color: white; */
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 13pt;
+}
+
+.navbar {
+  position: fixed;
+  /* top:00px; */
+  width: 100%; /* Full width */
+  text-align: center;
+  margin-top: -120px;
+  z-index: 2; 
+}
+
+.logo {
+  width: 60px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 4; 
+}
+
+nav {
+  z-index: 2; 
+}
+
+.buy {
+  position: relative;
+  /* background-color: aliceblue; */
+  width: 250px;
+  top: -62px;
+  left: 80px;
+  z-index: 3; 
+}
+
+.inputsearch {
+  position: relative;
+  top: -49px;
+  border-radius: 8px;
+  background-color: blanchedalmond;
+}
+
+.cart,
+.like,
+.profile {
+  border: none;
+  background-color: black;
+  height: 0px;
+  position: relative;
+  top: -49px;
+}
+.others{
+  /* background-color:wheat ; */
+  width: 340px;
+  margin-left: 1070px;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative; 
+  /* z-index: 3; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top:25px;
+  right: 30px;
+  /* width: 150px; */
+  background-color:wheat;
+  border-radius: 10px;
+  margin-top: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 40;
+}
+.dropdown-content ul{
+  list-style: none;
+  margin-left: -30px;
+  /* padding-left: 10px; */
+  
+  /* text-decoration: none; */
+}
+.sublist{
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  /* gap: 20px; */
+  display: block;
+  /* margin-top: 80px; */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+  
+}
+.Linkstyle:hover {
+  position: relative;
+}
+
+.Linkstyle:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: blueviolet; 
+}
+
+.Linkstyle:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: coral; 
+}
+
+
+
+.main {
+  min-height: 92vh;
+  background-image: url('https://wallpapercave.com/wp/wp7566472.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin-top: -70px;
+ /* overflow: hidden; */
+}
+
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top:-515px;
+  background-color:aliceblue;
+  opacity: 0.8;
+}
+.linkss{
+  text-decoration: none;
+  font-size: 25pt;
+  color:black;
+  margin-right: 20px;
+  font-weight: 500;
+  
+}
+#qoutess{
+  position: relative;
+  top: 10px;
+  /* right: 80px; */
+  margin-left: 200px;
+  z-index: 0;
+}
+
+.quote{
+  height: 300px;
+  width:600px;
+  text-align: center;
+  font-size: 55pt;
+  font-weight: 600;
+  /* background-color: rgb(252, 230, 108); */
+  
+    text-shadow: 2px 2px 5px red;
+
+  position: relative;
+  top: 00px;
+  left: 200px;
+  /* opacity: 0.7; */
+  border-radius: 25px;
+}
+/* .active {
+  color: red;
+  font-weight: bold;
+} */
+
+.linkss:hover{
+  color: blue;
+}
+
+.button1{
+  height: 50px;
+  width: 200px;
+  font-size: 20pt;
+  border-radius: 35px;
+  background-color: rgb(212, 166, 255);
+}
+
+.logout{
+  position: relative;
+  right: 0px;
+}
+
+.logins{
+  font-size: 17pt;
+  height: 570px;
+  width:400px;
+  background-color:aliceblue;
+  float: right;
+  position: relative;
+  top:10px;
+  right: 60px;
+  opacity: 0.8;
+
+}
+.inputField{
+  font-size: 25pt;
+  border-radius: 20px; 
+  width: 350px;
+}
+
+.down{
+  margin-top: 20px;
+}
+
+.button1:hover{
+  background-color: rgb(134, 255, 255);
+}
+
+.Homely{
+  position: relative;
+  top: 30px;
+  font-size: larger;
+  
+}
+
+.Homelyy{
+  color: aliceblue;
+}
+
+@media only screen and (min-width: 270px) and (max-width: 540px) {
+  .navbar-container{
+    background-color: black;
+    height: 60px;
+    /* z-index: 15; */
+    /* margin-top: 70px; */
+    position: fixed;
+    top:0px;
+    width: 600px;
+    z-index: 200;
+  }
+  .hamburger-icon {
+    display:block;
+    position: relative;
+    left: 340px; /* Adjust this value to center horizontally */
+    top: -40px; 
+    width: 40px;
+    z-index: 10; 
+    color: aliceblue;
+  }
+  .linkHr{
+    display:inline-block;
+  }
+  .nav-links {
+    display: none; 
+    flex-direction: column;
+    /* background-color:black; */
+    color: aliceblue;
+    position: absolute;
+    top: 60px;
+    font-size: 22pt;
+    text-align: center;
+    right: 0;
+    width: 100%;
+    margin-bottom: 5px;
+    z-index: 19;
+  }
+  .others{
+    /* background-color:wheat ; */
+    position: relative;
+    top:175px; 
+    width: 330px;
+    margin-left: 0px;
+    /* margin-top: 100px; */
+    z-index: 0;
+    color: aliceblue;
+    
+  }
+    /* .home{
+          position: relative;
+          margin-top: 80px;
+         } */
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16pt;
+    margin-left: 0px;
+    /* z-index: 19; */
+    padding: 10px;
+    display: block;
+    z-index: 40;
+  }
+
+  .nav-links.open {
+    display: flex; 
+    position: absolute;
+    top:120px;
+    z-index: 90;
+    color: aliceblue;
+    /* margin-bottom: 100px; */
+       }
+
+       .Linkstyle {
+        color: white;
+        text-decoration: none;
+        margin-right: 40px;
+        font-size: 13pt;
+        z-index: 30;
+      }
+      .sublist{
+        text-decoration: none;
+        color: wheat;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+       display: block;
+      }
+ 
+.navbar {
+  position: fixed;
+  top:0px;
+  width: 100%; /* Full width */
+  text-align: center;
+  margin-top: -120px;
+  z-index: 2; 
+}
+
+.logo {
+ z-index: 1;
+}
+
+nav {
+  z-index: 2; 
+}
+
+.buy {
+ display: none;
+}
+
+.inputsearch {
+  position: relative;
+  top: -49px;
+  border-radius: 8px;
+  background-color: blanchedalmond;
+}
+
+
+/* .profile {
+ display: none;
+} */
+
+
+.dropdown {
+  display: inline-block;
+  position: relative; 
+  /* z-index: 3; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top:25px;
+  /* width: 150px; */
+  background-color:wheat;
+  border-radius: 10px;
+  margin-top: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 40;
+}
+.dropdown-content ul{
+  list-style: none;
+  margin-left: -30px;
+  /* padding-left: 10px; */
+  
+  /* text-decoration: none; */
+}
+.sublist{
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  /* gap: 20px; */
+  display: block;
+  /* margin-top: 80px; */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+  
+}
+.Linkstyle:hover {
+  position: relative;
+}
+
+.Linkstyle:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: blueviolet; 
+}
+
+.Linkstyle:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: coral; 
+}
+.main {
+  min-height: 100vh;
+  background-image: url('https://wallpapercave.com/wp/wp7566472.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top:-515px;
+  background-color:aliceblue;
+  opacity: 0.8;
+}
+.linkss{
+  text-decoration: none;
+  font-size: 25pt;
+  color:black;
+  margin-right: 20px;
+  font-weight: 500;
+  
+}
+#qoutess{
+  position: relative;
+  top: 10px;
+  /* right: 80px; */
+  margin-left: 200px;
+  z-index: 0;
+}
+
+.quote{
+  height: 300px;
+  width:600px;
+  text-align: center;
+  font-size: 55pt;
+  font-weight: 600;
+  /* background-color: rgb(252, 230, 108); */
+  
+    text-shadow: 2px 2px 5px red;
+
+  position: relative;
+  top: 00px;
+  left: 300px;
+  /* opacity: 0.7; */
+  border-radius: 25px;
+}
+/* .active {
+  color: red;
+  font-weight: bold;
+} */
+
+.linkss:hover{
+  color: blue;
+}
+
+.button1{
+  height: 50px;
+  width: 200px;
+  font-size: 20pt;
+  border-radius: 35px;
+  background-color: rgb(212, 166, 255);
+}
+
+.logout{
+  position: relative;
+  right: 0px;
+}
+
+.logins{
+  font-size: 17pt;
+  height: 600px;
+  width:400px;
+  background-color:aliceblue;
+  float: right;
+  position: relative;
+  top:60px;
+  right: 0px;
+  opacity: 0.8;
+}
+.inputField{
+  font-size: 25pt;
+  border-radius: 20px; 
+  width: 350px;
+}
+
+.down{
+  margin-top: 20px;
+}
+
+.button1:hover{
+  background-color: rgb(134, 255, 255);
+}
+
+.Homely{
+  position: relative;
+  top: 30px;
+  font-size: larger;
+  
+}
+
+.Homelyy{
+  color: aliceblue;
+}
+}
+
+
+@media (min-width: 550px) and (max-width: 1024px) {
+  .navbar-container{
+    background-color: black;
+    height: 60px;
+    /* z-index: 15; */
+    /* margin-top: 70px; */
+    position: fixed;
+    top:0px;
+    width: 880px;
+    z-index: 200;
+  }
+  .hamburger-icon {
+    display:block;
+    position: relative;
+    left: 650px; /* Adjust this value to center horizontally */
+    top: -40px; 
+    width: 40px;
+    z-index: 10; 
+    color: aliceblue;
+  }
+  .linkHr{
+    display:inline-block;
+  }
+  .nav-links {
+    display: none; 
+    flex-direction: column;
+    /* background-color:black; */
+    color: aliceblue;
+    position: absolute;
+    top: 60px;
+    font-size: 22pt;
+    text-align: center;
+    right: 0;
+    width: 100%;
+    margin-bottom: 5px;
+    z-index: 19;
+  }
+    /* .home{
+          position: relative;
+          margin-top: 80px;
+         } */
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16pt;
+    margin-left: 0px;
+    /* z-index: 19; */
+    padding: 10px;
+    display: block;
+    z-index: 40;
+  }
+
+  .nav-links.open {
+    display: flex; 
+    position: relative;
+    top: 40px;
+    z-index: 90;
+    color: aliceblue;
+    /* margin-bottom: 100px; */
+       }
+
+       .Linkstyle {
+        color: white;
+        text-decoration: none;
+        margin-right: 40px;
+        font-size: 13pt;
+        z-index: 30;
+      }
+      .sublist{
+        text-decoration: none;
+        color: wheat;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: relative;
+       display: block;
+      }
+ 
+.navbar {
+  position: fixed;
+  /* top:00px; */
+  width: 100%; /* Full width */
+  text-align: center;
+  margin-top: -120px;
+  z-index: 2; 
+}
+
+.logo {
+  width: 60px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 4; 
+}
+
+nav {
+  z-index: 2; 
+}
+
+.buy {
+ display: none;
+}
+
+.inputsearch {
+  position: relative;
+  top: -49px;
+  border-radius: 8px;
+  background-color: blanchedalmond;
+}
+
+.cart,
+.like,
+.profile {
+  border: none;
+  background-color: black;
+  height: 0px;
+  position: relative;
+  top: -49px;
+}
+.others{
+  /* background-color:wheat ; */
+  position: relative;
+  top:90px; 
+  width: 380px;
+  margin-left: 80px;
+  /* margin-top: 100px; */
+  z-index: 0;
+  color: aliceblue;
+  
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative; 
+  /* z-index: 3; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top:25px;
+  /* width: 150px; */
+  background-color:wheat;
+  border-radius: 10px;
+  margin-top: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 40;
+}
+.dropdown-content ul{
+  list-style: none;
+  margin-left: -30px;
+  /* padding-left: 10px; */
+  
+  /* text-decoration: none; */
+}
+.sublist{
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  /* gap: 20px; */
+  display: block;
+  /* margin-top: 80px; */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+  
+}
+.Linkstyle:hover {
+  position: relative;
+}
+
+.Linkstyle:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: blueviolet; 
+}
+
+.Linkstyle:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: coral; 
+}
+.main {
+  min-height: 100vh;
+  background-image: url('https://wallpapercave.com/wp/wp7566472.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top:-515px;
+  background-color:aliceblue;
+  opacity: 0.8;
+}
+.linkss{
+  text-decoration: none;
+  font-size: 25pt;
+  color:black;
+  margin-right: 20px;
+  font-weight: 500;
+  
+}
+#qoutess{
+  position: relative;
+  top: 10px;
+  /* right: 80px; */
+  margin-left: 200px;
+  z-index: 0;
+}
+
+.quote{
+  height: 300px;
+  width:600px;
+  text-align: center;
+  font-size: 55pt;
+  font-weight: 600;
+  /* background-color: rgb(252, 230, 108); */
+  
+    text-shadow: 2px 2px 5px red;
+
+  position: relative;
+  top: 00px;
+  left: 300px;
+  /* opacity: 0.7; */
+  border-radius: 25px;
+}
+/* .active {
+  color: red;
+  font-weight: bold;
+} */
+
+.linkss:hover{
+  color: blue;
+}
+
+.button1{
+  height: 50px;
+  width: 200px;
+  font-size: 20pt;
+  border-radius: 35px;
+  background-color: rgb(212, 166, 255);
+}
+
+.logout{
+  position: relative;
+  right: 0px;
+}
+
+.logins{
+  font-size: 17pt;
+  height: 600px;
+  width:400px;
+  background-color:aliceblue;
+  float: right;
+  position: relative;
+  top:60px;
+  right: 60px;
+  opacity: 0.8;
+}
+.inputField{
+  font-size: 25pt;
+  border-radius: 20px; 
+  width: 350px;
+}
+
+.down{
+  margin-top: 20px;
+}
+
+.button1:hover{
+  background-color: rgb(134, 255, 255);
+}
+
+.Homely{
+  position: relative;
+  top: 30px;
+  font-size: larger;
+  
+}
+
+.Homelyy{
+  color: aliceblue;
+}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2){
+  .hamburger-icon{
+    margin-left: -50px;
+  }
+  .others{
+    /* background-color:wheat ; */
+    position: fixed;
+    top:50px; 
+    width: 380px;
+    margin-left: 80px;
+    /* margin-top: 100px; */
+    z-index: 0;
+    color: aliceblue;
+    
+  }
+  .dropdown {
+    display: inline-block;
+    position: relative; 
+    /* z-index: 3; */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top:25px;
+    /* width: 150px; */
+    background-color:wheat;
+    border-radius: 10px;
+    margin-top: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 40;
+  }
+  .dropdown-content ul{
+    list-style: none;
+    margin-left: -30px;
+    /* padding-left: 10px; */
+    
+    /* text-decoration: none; */
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1360px){
+.others{
+  margin-left: 840px;
+  font-size: small;
+}
+.buy{
+  position: relative;
+top:-80px;
+ margin-left: -30px;
+ font-size: 10pt;
+ /* display: none; */
+}
+.logo{
+position: relative;
+top:-30px;
+}
+.gif{
+  margin-top: 370px;
+}
+.box{
+  margin-bottom: 30px;
+}
+.bestSellerHr{
+  position: relative;
+ Left: -120px;
+}
+.navbar-container{
+  margin-top: 30px;
+}
+.Linkstyle{
+  font-size: 5pt;
+  position: relative;
+ Left: -70px;
+}
+.logo{
+  margin-left: -10px;
+}
+
+
+}
+
+@media (min-width: 1365px) and (max-width: 1460px){
+  .others{
+    margin-left: 1000px;
+    font-size: small;
+  }
+  .buy{
+   margin-left: -30px;
+  }
+  nav.navlinks{
+    font-size: 5pt;
+  }
+  .logo{
+    margin-left: -10px;
+  }
+  
+  }
+
+  @media (min-width: 980px) and (max-width: 1030px){
+    .others{
+      margin-left: 500px;
+      font-size: small;
+    }
+    .navbar-container{
+      width: 1010px;
+      margin-top: -8px;
+    }
+    .buy{
+     visibility: hidden;
+    }
+    nav.navlinks{
+      font-size: 5pt;
+    }
+    .logo{
+      margin-left: -10px;
+    }
+    .Linkstyle{
+      font-size: 5pt;
+      position: relative;
+     Left: -120px;
+    }
+    .hamburger-icon{
+      margin-left: 250px;
+    }
+    .bestSellerHr{
+      position: relative;
+      left: 110px;
+    }
+    .bestSellerContainer{
+      margin-left: 110px;
+    }
+    
+    
+    }
+
+   
